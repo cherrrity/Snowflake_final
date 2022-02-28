@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "317046467841",
+    "firebase_url": "https://snowflake-fc855-default-rtdb.firebaseio.com",
+    "project_id": "snowflake-fc855",
+    "storage_bucket": "snowflake-fc855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317046467841:android:56ebd7680bf1a13c4abf00",
+        "android_client_info": {
+          "package_name": "com.snowflake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317046467841-ctds8h2j736iorhnc0s8vtlv830tq39o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snowflake",
+            "certificate_hash": "afac656cb61c003b54a0e69c8b41109c0b78dcb9"
+          }
+        },
+        {
+          "client_id": "317046467841-bk62ncor04bvvohna35ukjuifbprrtbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWamH_pt4Xd_Cn4Be2QS6dS_MACd8lyGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317046467841-bk62ncor04bvvohna35ukjuifbprrtbr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "317046467841-414pp7rogrkblrth8f5dnj0kii6qhmbk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Snowflake-final"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317046467841:android:3bc59473ad5384944abf00",
+        "android_client_info": {
+          "package_name": "com.snowflake_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317046467841-1f8lreb3fnoh2cm9saq50djbquh4bqfc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snowflake_final",
+            "certificate_hash": "afac656cb61c003b54a0e69c8b41109c0b78dcb9"
+          }
+        },
+        {
+          "client_id": "317046467841-bk62ncor04bvvohna35ukjuifbprrtbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWamH_pt4Xd_Cn4Be2QS6dS_MACd8lyGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317046467841-bk62ncor04bvvohna35ukjuifbprrtbr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "317046467841-414pp7rogrkblrth8f5dnj0kii6qhmbk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Snowflake-final"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

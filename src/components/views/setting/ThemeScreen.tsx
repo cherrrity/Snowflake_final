@@ -10,7 +10,7 @@ export const ThemeScreen = () => {
     const toggleTheme = useToggleThemeContext();
 
     return (
-        <SafeAreaView style = {styles.safe}>
+    <SafeAreaView style = {styles.safe}>
         <View>
             <Button>
                 <Text style = {[styles.text, {color: theme.colors.text, fontFamily: toggleTheme.fontFamily}]}>다크모드</Text>

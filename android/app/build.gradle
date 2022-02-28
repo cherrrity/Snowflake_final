@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 
@@ -130,6 +131,10 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    manifestPlaceholders = [
+      appAuthRedirectScheme: 'io.identityserver.demo'
+    ]
+
     defaultConfig {
         applicationId "com.snowflake_final"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -190,10 +195,15 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
+    
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    implementation 'com.google.firebase:firebase-analytics'
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'

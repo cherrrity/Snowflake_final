@@ -5,6 +5,14 @@ import {useColorScheme} from "react-native-appearance";
 import { ToggleThemeProvider } from "./src/components/providers/ToggleThemeProvider";
 import { MainBottomNavigator } from "./src/components/navigators/Navigator";
 
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import rootReducer from "./src/store/reducers/rootReducer";
+import thunk from "redux-thunk";
+import { Router } from "react-router-dom";
+import { Switch } from "react-native";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const App = ()=>{
   // THEME SETTING
@@ -20,12 +28,15 @@ const App = ()=>{
     setFontName((font)=>{return font? "NanumMyeongjo":"NanumGothic"}); 
   }, []);
 
-  return (
-    <ToggleThemeProvider toggle = {toggleTheme} fontNameToggle = {fontNameToggle} isFontToggle={font} fontFamily={fontName}>
-      <NavigationContainer theme = {theme}>
-        <MainBottomNavigator/>
-      </NavigationContainer>
-    </ToggleThemeProvider>);
+  return(
+    <Provider store={store}>
+      <ToggleThemeProvider toggle = {toggleTheme} fontNameToggle = {fontNameToggle} isFontToggle={font} fontFamily={fontName}>
+        <NavigationContainer theme = {theme}>
+          <MainBottomNavigator/>
+        </NavigationContainer>
+      </ToggleThemeProvider>
+    </Provider>
+    );
 
 }
 export default App;
